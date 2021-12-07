@@ -121,12 +121,24 @@ header p {
 	padding: 20px;
 }
 .page_title {
+	position: relative;
 	font-family: 'Tahoma';
 	font-weight: normal;
 	font-size: 20px;
 	text-align: center;
 	margin-top: 45px;
 	margin-bottom: 45px;
+	padding: 1.5rem;
+}
+.page_title:before {
+	position: absolute;
+  bottom: 8px;
+  left: calc(50% - 22px);
+  width: 44px;
+  height: 3px;
+  content: '';
+  border-radius: 2px;
+  background: #333;
 }
 .manufacture {
 	font-family: 'Roman';
