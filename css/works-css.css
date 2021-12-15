@@ -229,3 +229,14 @@ footer p {
 	padding-top: 10px;
 	text-align: center;
 }
+
+/* darkmode */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #111;
+		color: #eee;
+	}
+	.container section {
+		background-color: #555;
+	}
+}
