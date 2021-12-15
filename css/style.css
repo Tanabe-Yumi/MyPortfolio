@@ -132,13 +132,13 @@ header p {
 }
 .page_title:before {
 	position: absolute;
-  bottom: 8px;
-  left: calc(50% - 22px);
-  width: 44px;
-  height: 3px;
-  content: '';
-  border-radius: 2px;
-  background: #333;
+	bottom: 8px;
+	left: calc(50% - 22px);
+	width: 44px;
+	height: 3px;
+	content: '';
+	border-radius: 2px;
+	background: #333;
 }
 .manufacture {
 	font-family: 'Roman';
@@ -179,4 +179,16 @@ footer p {
 	color: #fff;
 	font-size: 12px;
 	padding-top: 10px;
-	text-align: center;}
+	text-align: center;
+}
+
+/* darkmode */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #111;
+		color: #eee;
+	}
+	.container section {
+		background-color: #555;
+	}
+}
