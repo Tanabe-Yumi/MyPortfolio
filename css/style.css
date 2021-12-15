@@ -180,15 +180,30 @@ footer p {
 	font-size: 12px;
 	padding-top: 10px;
 	text-align: center;
+	transition: .5s;
 }
 
 /* darkmode */
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color: #111;
+		background-color: #333;
 		color: #eee;
 	}
+	img {
+		opacity: 0.9;
+	}
+	.nav_menu_li {
+		color: #333;
+	}
+	.page_title:before {
+		background: #eee;
+	}
 	.container section {
-		background-color: #555;
+		background-color: #666;
+	}
+	.type {
+		color: #fafafa;
+	.comment {
+		color: #fe5f55;
 	}
 }
