@@ -1,0 +1,37 @@
+* {
+	transition: .5s;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #333;
+		color: #eee;
+	}
+	img {
+		opacity: 0.9;
+	}
+	.nav_menu_li {
+		color: #f8fbfd;
+	}
+	.page_title:before {
+		background: #eee;
+	}
+	.container section {
+		background-color: #666;
+	}
+	.type {
+		color: #fafafa;
+	}
+	.comment {
+		color: #fe5f55;
+	}
+	.gitHubLink {
+		color: #79bedb;
+	}
+	
+	@media screen and (min-width: 481px) {
+		.nav_menu_li {
+			color: #333;
+		}
+	}
+}
