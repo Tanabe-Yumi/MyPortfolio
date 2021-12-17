@@ -1,0 +1,170 @@
+/* desktop */
+@media screen and (min-width: 481px) {
+	body {
+		margin: 0;
+	}
+
+	header {
+		display: flex;
+		background: rgb(255,199,150);
+    background: linear-gradient(270deg, rgba(255,199,150,1) 0%, rgba(255,107,149,1) 100%);
+	}
+	header p {
+		color: #fff;
+		font-size: 28px;
+		margin: auto;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: 60px;
+		text-align: center;
+		width: 200px;
+	}
+
+	/* ハンバーガーメニュー */
+	.nav_toggle {
+		display: block;
+		position: relative;
+		float: right;
+		width: 1.75rem;
+		height: 1.5rem;
+		margin-top: 20px;
+		margin-right: 24px;
+	}
+	.nav_toggle i {
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: #f8fbfd;
+		position: absolute;
+		transition: transform .5s, opacity .5s;
+	}
+	.nav_toggle i:nth-child(1) {	/* 一番上の線 */
+		top: 0;
+	}
+	.nav_toggle i:nth-child(2) {	/* 真ん中の線 */
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.nav_toggle i:nth-child(3) {	/* 一番下の線 */
+		bottom: 0;
+	}
+		/* クリック後 */
+	.nav_toggle.show i:nth-child(1) {
+		transform: translateY(10px) rotate(-45deg);
+	}
+	.nav_toggle.show i:nth-child(2) {
+		opacity: 0;
+	}
+	.nav_toggle.show i:nth-child(3) {
+		transform: translateY(-12px) rotate(45deg);
+	}
+	/* メニューリスト */
+	.nav {
+		font-family: 'Roman';
+		font-size: 22px;
+		float: right;
+		margin-top: 18px;
+		margin-left: 70%;
+		width: 30%;
+		background-color: #e8e8e8;
+		position: fixed;
+		top: 3rem;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 1rem;
+		padding-left: 24px;
+		padding-right: 12px;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity .5s, visibility .5s;
+	}
+	.nav li a {
+		text-decoration: none;
+	}
+	/* クリック後 */
+	.nav.show {
+		margin-top: 18px;
+		background-color: #e8e8e8;
+		margin-left: 70%;
+		width: 30%;
+		float: right;
+		padding-left: 24px;
+		padding-right: 12px;
+		opacity: 0.95;
+		visibility: visible;
+	}
+
+	.nav_menu_ul {
+		margin-top: 0;
+		padding-left: 0;
+	}
+	.nav_menu_li {
+		list-style: none;
+		padding-bottom: 4px;
+	}
+
+	.container {
+		width: 80%;
+		max-width: 800px;
+		min-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.container section {
+		margin-bottom: 90px;
+		/* background-color: #eee; */
+		padding: 20px;
+	}
+	.page_title {
+		position: relative;
+		font-family: 'Tahoma';
+		font-weight: normal;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 45px;
+		margin-bottom: 20px;
+		padding: 1.5rem;
+	}
+	.page_title:before {
+		position: absolute;
+		bottom: 8px;
+		left: calc(50% - 22px);
+		width: 44px;
+		height: 3px;
+		content: '';
+		border-radius: 2px;
+		background: #333;
+	}
+  .achievement {
+    font-size: 18px;
+    width: 100%;
+  }
+  .achievement a {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .year {
+    padding-top: 24px;
+    float: right;
+    padding-left: 60px;
+    padding-right: 36px;
+  }
+  .award {
+    padding-top: 24px;
+  }
+
+	footer {
+		height: 40px;
+		background: rgb(255,199,150);
+    background: linear-gradient(270deg, rgba(255,199,150,1) 0%, rgba(255,107,149,1) 100%);
+	}
+	footer p {
+		color: #fff;
+		font-size: 12px;
+		padding-top: 10px;
+		text-align: center;
+		transition: .5s;
+	}
+}
