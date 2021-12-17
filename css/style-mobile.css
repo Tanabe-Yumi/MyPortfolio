@@ -20,7 +20,7 @@
 		padding-bottom: 0;
 		padding-left: 16px;
 		text-align: center;
-		width: 210px;
+		width: 220px;
 	}
 
 	/* ハンバーガーメニュー */
@@ -141,7 +141,7 @@
 		background: #333;
 	}
 	.manufacture {
-		font-family: 'Roman';
+		font-family: sans-serif;
 		font-weight: normal;
 		font-size: 24px;
 		margin-top: 12px;
@@ -149,7 +149,7 @@
 		padding-left: 6px;
 	}
 	.type {
-		font-family: 'Roman';
+		font-family: 'Verdana';
 		font-weight: bold;
 		font-size: 28px;
 		margin-top: 0;
@@ -157,7 +157,7 @@
 		padding-left: 6px;
 	}
 	.container p {
-		font-family: 'Tahoma';
+		font-family: sans-serif;
 		margin:0;
 		line-height: 1.8;
 	}
