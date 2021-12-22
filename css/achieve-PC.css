@@ -137,6 +137,16 @@
 		border-radius: 2px;
 		background: #333;
 	}
+	.page_title.qua:before {
+		position: absolute;
+		bottom: 6px;
+		left: calc(50% - 28px);
+		width: 56px;
+		height: 2px;
+		content: '';
+		border-radius: 2px;
+		background: #333;
+	}
   .achievement {
     font-size: 18px;
     width: 100%;
