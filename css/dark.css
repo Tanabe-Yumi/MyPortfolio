@@ -1,5 +1,5 @@
 * {
-	transition: .5s;
+	transition: .3s;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,8 +16,14 @@
 	.page_title:before {
 		background: #eee;
 	}
+	.page_title.qua:before {
+		background: #eee;
+	}
 	.container section {
 		background-color: #666;
+	}
+	.container section.ach {
+		background-color: #333;
 	}
 	.type {
 		color: #fafafa;
@@ -27,6 +33,9 @@
 	}
 	.gitHubLink {
 		color: #79bedb;
+	}
+	.evalAgerage p {
+		color: #fafafa;
 	}
 	
 	@media screen and (min-width: 481px) {
