@@ -11,6 +11,7 @@
 		<link href="css/works-PC.css" rel="stylesheet">
 		<link href="css/works-mobile.css" rel="stylesheet">
 		<link href="css/dark.css" rel="stylesheet">
+		<link href="css/evalution.css" rel="stylesheet">
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	</head>
 	
@@ -39,14 +40,14 @@
 				<h1 class="content-title">数独</h1>
 				<h1 class="language">w/ <span class="python">Python</span></h1>
 				<img src="https://lh3.googleusercontent.com/pw/AM-JKLWBb46fQE11g7JCqMi8UIloyBYfybi2Kdcb3z8U9pu87wGr3DpbUqIF3laAI6DFUDc5Qwq3OFcdyKENU0kpCmtYwgalQHjeOdKsBkqak-0sOYg3QwKvI2LFUOaUCcYyXg2xuvlldkfJZlXzj2cgabSVkQ=s757-no?authuser=0">
-				<p>Pythonを使って数独（ナンプレ）を解くプログラムです。参考サイトからファイルインプット、アウトプットができるように改造しました。</p>
+				<p class="comments">Pythonを使って数独（ナンプレ）を解くプログラムです。参考サイトからファイルインプット、アウトプットができるように改造しました。</p>
 				<p class="gitHubLink"><i class="fab fa-github"></i>GitHub Link : <a href="https://github.com/Tanabe-Yumi/solveSudoku.git" target="_blonk">https://github.com/Tanabe-Yumi/solveSudoku.git</a></p>
 			</section>
 
 			<!-- <section>
 				<h1 class="content-title">デラックスベンディングマシーン</h1>
 				<h1 class="language">w/ <span class="Ruby">Ruby</span></h1>
-				<p>自動販売機の機能を作り、DXRubyを使用してビジュアル的にしました。<br>お金を入れて、選ぶだけ。
+				<p class="comments">自動販売機の機能を作り、DXRubyを使用してビジュアル的にしました。<br>お金を入れて、選ぶだけ。
 				</p>
 				<p class="gitHubLink"><i class="fab fa-github"></i>GitHub Link : <a href="#" target="_blonk"></a></p>
 			</section> -->
@@ -55,7 +56,7 @@
 				<h1 class="content-title">アドベンチャー 迷路</h1>
 				<h1 class="language">w/ <span class="Ruby">Ruby</span></h1>
 				<img src="https://lh3.googleusercontent.com/pw/AM-JKLWWoLqE6BFkAz6Ei1VLVJE-ZJqbYhFf1D3iEaChR7kTr43vY1O_AbRRSYlOQdu0729I5qmY45OY2Wkm_EJlNfWBdFBchn2oS3he-K43kAUe1PY-_65NZMy5skXaOPK6gmiZCqL5FEyuBafV8XimG9gpSw=w1025-h785-no?authuser=0">
-				<p>DXRuby、DXOpal を使用した迷路アドベンチャーゲームです。3人で3日をかけて制作しました。謎を解きながらマップを進んでいって、鍵をゲットしてゴールに到達！...するゲームのベースができました。</p>
+				<p class="comments">DXRuby、DXOpal を使用した迷路アドベンチャーゲームです。3人で3日をかけて制作しました。謎を解きながらマップを進んでいって、鍵をゲットしてゴールに到達！...するゲームのベースができました。</p>
 				<p class="gitHubLink"><i class="fab fa-github"></i>GitHub Link : <a href="https://github.com/AKI-laboratory/adventure.git" target="_blonk">https://github.com/AKI-laboratory/adventure.git</a></p>
 			</section>
 
@@ -63,9 +64,33 @@
 				<h1 class="content-title">ポートフォリオ</h1>
 				<h1 class="language">w/ <span class="HTML">HTML</span> <span class="CSS">CSS</span> <span class="JavaScript">JavaScript</span></h1>
 				<img src="https://lh3.googleusercontent.com/pw/AM-JKLUzQRPcpphBBG5TEgzVBw2LNzDDOaV7RYHGlcfUOvy7wdqfcgP7aVoF7jPyPPF4Em1kHMUQep76cWeuQj-bCjgnBECuSv3hD4U2jXHFQhSvsR0TcWf0ghw9e81bV78zniFcIeCP9gzSAhBNTVqwBAZkMA=w1075-h785-no?authuser=0">
-				<p>自己紹介のサイトです。<br>趣味とプログラミングの小さな作品を載せています。<br>このサイトです。</p>
+				<p class="comments">自己紹介のサイトです。<br>趣味とプログラミングの小さな作品を載せています。<br>このサイトです。</p>
 				<p class="gitHubLink"><i class="fab fa-github"></i>GitHub Link : <a href="https://github.com/Tanabe-Yumi/MyPortfolio.git" target="_blonk">https://github.com/Tanabe-Yumi/MyPortfolio.git</a></p>
 			</section>
+
+			<form id="eval" target="hid">
+				<p>評価してね</p>
+				<div class="rate-form noselect">
+					<input id="star5" type="radio" name="rate" value="5" onclick="sendEvalution(this.value)">
+					<label for="star5">★</label>
+					<input id="star4" type="radio" name="rate" value="4" onclick="sendEvalution(this.value)">
+					<label for="star4">★</label>
+					<input id="star3" type="radio" name="rate" value="3" onclick="sendEvalution(this.value)">
+					<label for="star3">★</label>
+					<input id="star2" type="radio" name="rate" value="2" onclick="sendEvalution(this.value)">
+					<label for="star2">★</label>
+					<input id="star1" type="radio" name="rate" value="1" onclick="sendEvalution(this.value)">
+					<label for="star1">★</label>
+				</div>
+			</form>
+	
+			<div class="evalAgerage" id="stars">
+				<p>評価してくれてありがとう<i class="fas fa-seedling"></i></p>
+				<p class="avg">みんなの評価　<span class="fiveStars"></span>　<span class="contents" id="evalution">0</span></p>
+			</div>
+	
+			<!-- 評価を送ったGASの返答 -->
+			<iframe src="emp.htm" height="0px" name="hid" frameborder="0" style="visibility:hidden;"></iframe>
 		</div>
 		
 		<footer>
@@ -74,5 +99,6 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/jQuery.js" charset="utf-8"></script>
+		<script src="js/evalution.js" charset="utf-8"></script>
 	</body>
 </html>

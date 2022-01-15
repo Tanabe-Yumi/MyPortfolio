@@ -11,6 +11,7 @@
 		<link href="css/achieve-PC.css" rel="stylesheet">
 		<link href="css/achieve-mobile.css" rel="stylesheet">
 		<link href="css/dark.css" rel="stylesheet">
+    <link href="css/evalution.css" rel="stylesheet">
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	</head>
 	
@@ -35,25 +36,25 @@
 		
 		<div class="container">
 			<h1 class="page_title">ACHIEVE</h1>
-      <section>
+      <section class="ach">
         <table class="achievement">
-          <tr>
+          <tr class="tableLine">
             <td class="year">2019</td>
             <td class="award">J2 プログラミング課題　1位</td>
           </tr>
-          <tr>
+          <tr class="tableLine">
             <td class="year">2020</td>
             <td class="award">J3 プログラミング課題　1位</td>
           </tr>
-          <tr>
+          <tr class="tableLine">
             <td class="year"></td>
             <td class="award">OSSビジネスプランコンテスト 2020　奨励賞　IIJ特別賞<a href="https://www.shimane-oss.org/biz-contest2020/" target="_blank"><i class="fas fa-link"></i></a></td>
           </tr>
-          <tr>
+          <tr class="tableLine">
             <td class="year">2021</td>
             <td class="award">OSSビジネスプランコンテスト 2021　奨励賞<a href="https://www.shimane-oss.org/biz-contest2021/" target="_blank"><i class="fas fa-link"></i></a></td>
           </tr>
-          <tr>
+          <tr class="tableLine">
             <td class="year"></td>
             <td class="award">プログラミングコンテスト 2021　特別賞 (3位相当)<a href="https://www.procon.gr.jp/?cat=1680" target="_blank"><i class="fas fa-link"></i></a></td>
           </tr>
@@ -61,26 +62,50 @@
       </section>
 
       <h1 class="page_title qua">QUALIFICATION</h1>
-      <section>
+      <section class="ach">
         <table class="achievement">
-          <tr>
+          <tr class="tableLine">
             <td class="year">2017</td>
             <td class="award">実用英語技能検定　3級<a href="https://www.eiken.or.jp/" target="_blank"><i class="fas fa-link"></i></a></td>
           </tr>
-          <tr>
+          <tr class="tableLine">
             <td class="year">2019</td>
             <td class="award">CGクリエイター検定　ベーシック<a href="https://www.cgarts.or.jp/kentei/about/creator/index.html" target="_blank"><i class="fas fa-link"></i></a></td>
           </tr>
-          <tr>
+          <tr class="tableLine">
             <td class="year">2021</td>
             <td class="award">CGクリエイター検定　エキスパート<a href="https://www.cgarts.or.jp/kentei/about/creator/index.html" target="_blank"><i class="fas fa-link"></i></a></td>
           </tr>
-		  <tr>
+		      <tr class="tableLine">
             <td class="year"></td>
             <td class="award">基本情報技術者<a href="https://www.jitec.ipa.go.jp/1_11seido/fe.html" target="_blank"><i class="fas fa-link"></i></a></td>
           </tr>
         </table>
       </section>
+
+      <form id="eval" target="hid">
+        <p>評価してね</p>
+        <div class="rate-form noselect">
+          <input id="star5" type="radio" name="rate" value="5" onclick="sendEvalution(this.value)">
+          <label for="star5">★</label>
+          <input id="star4" type="radio" name="rate" value="4" onclick="sendEvalution(this.value)">
+          <label for="star4">★</label>
+          <input id="star3" type="radio" name="rate" value="3" onclick="sendEvalution(this.value)">
+          <label for="star3">★</label>
+          <input id="star2" type="radio" name="rate" value="2" onclick="sendEvalution(this.value)">
+          <label for="star2">★</label>
+          <input id="star1" type="radio" name="rate" value="1" onclick="sendEvalution(this.value)">
+          <label for="star1">★</label>
+        </div>
+      </form>
+  
+      <div class="evalAgerage" id="stars">
+        <p>評価してくれてありがとう<i class="fas fa-seedling"></i></p>
+        <p class="avg">みんなの評価　<span class="fiveStars"></span>　<span class="history" id="evalution">0</span></p>
+      </div>
+  
+      <!-- 評価を送ったGASの返答 -->
+      <iframe src="emp.htm" height="0px" name="hid" frameborder="0" style="visibility:hidden;"></iframe>
 		</div>
 		
 		<footer>
@@ -89,5 +114,6 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/jQuery.js" charset="utf-8"></script>
+    <script src="js/evalution.js" charset="utf-8"></script>
 	</body>
 </html>

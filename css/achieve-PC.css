@@ -155,6 +155,9 @@
     font-size: 16px;
     padding-left: 10px;
   }
+	.tableLine {
+		vertical-align: top;
+	}
   .year {
     padding-top: 24px;
     float: right;

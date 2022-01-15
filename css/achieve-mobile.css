@@ -65,7 +65,7 @@
 	}
 	/* メニューリスト */
 	.nav {
-		font-family: 'Roman';
+		font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN";
 		font-size: 22px;
 		color: #f8fbfd;
 		background-color: #13334c;
@@ -115,6 +115,9 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.container p {
+		font-family: sans-serif;
+	}
 	.container section {
     font-family: sans-serif;
 		margin-bottom: 20px;
@@ -160,6 +163,9 @@
     font-size: 16px;
     padding-left: 10px;
   }
+	.tableLine {
+		vertical-align: baseline;
+	}
   .year {
     padding-top: 24px;
     float: right;

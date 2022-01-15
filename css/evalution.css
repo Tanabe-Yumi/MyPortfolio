@@ -1,0 +1,85 @@
+.rate-form {
+  transition: 0s;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.rate-form input[type=radio] {
+  display: none;
+}
+.rate-form label {
+  transition: 0.1s;
+  position: relative;
+  padding: 0 5px;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 35px;
+}
+.rate-form label:hover {
+  transition: 0.1s;
+  color: #ffcc00;
+}
+.rate-form label:hover ~ label {
+  transition: 0.1s;
+  color: #ffcc00;
+}
+.rate-form input[type=radio]:checked ~ label {
+  transition: 0.1s;
+  color: #ffcc00;
+}
+form p {
+  margin-bottom: 0;
+}
+/* mobile */
+@media screen and (max-width: 480px) {
+  form {
+    margin-top:72;
+  }
+}
+
+.evalAgerage {
+  font-family: sans-serif;
+  color: #444;
+  margin: 0;
+  display: none;
+}
+.evalAgerage p {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.fa-seedling {
+  color: #96C120;
+  padding-left: 4px;
+}
+
+.fiveStars{
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  white-space: nowrap;
+  color: #CCCCCC;
+}
+.fiveStars:before, .fiveStars:after{
+  font-size: 20px;
+  content: '★★★★★';
+}
+.fiveStars:after{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #ffcf32;
+}
+
+/* 範囲選択禁止 */
+.noselect {
+  -webkit-touch-callout: none;	/* iOS Safari */
+  -webkit-user-select: none;		/* Safari */
+  -khtml-user-select: none;			/* Konqueror HTML */
+  -moz-user-select: none;				/* Firefox */
+  -ms-user-select: none;				/* Internet Explorer/Edge */
+  user-select: none;						/* Non-prefixed version, currently	supported by Chrome and Opera */
+}
