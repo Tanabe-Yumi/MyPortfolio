@@ -173,6 +173,7 @@
 		height: 40px;
 		background: rgb(90,110,238);
 		background: linear-gradient(90deg, rgba(90,110,238,1) 0%, rgba(148,165,242,1) 47%, rgba(224,95,177,1) 100%);
+		padding-bottom: env(safe-area-insert-bottom);
 	}
 	footer p {
 		color: #fff;
