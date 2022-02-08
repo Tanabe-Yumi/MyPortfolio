@@ -180,6 +180,7 @@
 		height: 40px;
 		background: rgb(255,199,150);
     background: linear-gradient(270deg, rgba(255,199,150,1) 0%, rgba(255,107,149,1) 100%);
+		padding-bottom: env(safe-area-inset-bottom);
 	}
 	footer p {
 		color: #fff;
