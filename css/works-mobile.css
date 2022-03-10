@@ -206,6 +206,7 @@
 		font-family: 'Verdana';
 		color: rgb(85, 85, 85);
 		padding-top: 12px;
+		margin-bottom: 0;
 	}
 	.comment {
 		color: #e03e45;
