@@ -31,6 +31,9 @@
 	.comment {
 		color: #fe5f55;
 	}
+	code {
+		background-color: #585858;
+	}
 	.gitHubLink {
 		color: #79bedb;
 	}
