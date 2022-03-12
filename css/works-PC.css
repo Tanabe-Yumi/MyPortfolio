@@ -209,6 +209,9 @@
 	.JavaScript {
 		color: #FFD83B;
 	}
+	.terminal {
+		color: #464646;
+	}
 	.comments {
 		font-family: 'Tahoma';
 		margin:0;
