@@ -196,6 +196,9 @@
 	.JavaScript {
 		color: #FFD83B;
 	}
+	.terminal {
+		color: #464646;
+	}
 	.comments {
 		font-family: sans-serif;
 		margin:0;
