@@ -110,6 +110,7 @@
 	.nav_menu_li {
 		list-style: none;
 		padding-bottom: 4px;
+		font-weight: bolder;
 	}
 
 	.container {
