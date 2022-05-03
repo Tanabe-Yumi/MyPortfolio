@@ -104,13 +104,12 @@
 	.nav_menu_ul {
 		margin-top: 0;
 		padding-left: 0;
-	/* 	list-style-type: armenian; */
 	}
 	.nav_menu_li {
 		list-style: none;
 		padding-bottom: 4px;
+		font-weight: bolder;
 	}
-	/* メニューバーここまで */
 
 	.container {
 	/* 	display: flex; */
