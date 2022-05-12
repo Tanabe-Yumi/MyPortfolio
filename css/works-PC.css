@@ -7,6 +7,10 @@
 		transition: .5s;
 	}
 
+	::selection {
+		background-color: #a0d5eb;
+	}
+
 	header {
 		display: flex;
 		background: rgb(245,209,0);
