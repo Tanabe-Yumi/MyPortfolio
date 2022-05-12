@@ -4,6 +4,10 @@
 		margin: 0;
 	}
 
+	::selection {
+		background-color: #a0d5eb;
+	}
+
 	header {
 		display: flex;
 		background: rgb(90,110,238);
